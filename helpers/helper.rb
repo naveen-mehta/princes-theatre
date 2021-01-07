@@ -1,3 +1,12 @@
+def HTTParty(url)
+    1.times do 
+        results = HTTParty.get(url, :headers => {
+            "X-Api-Key" => "Yr2636E6BTD3UCdleMkf7UEdqKnd9n361TQL9An7"
+        })
+        return results if results.success? 
+    end
+end
+
 def fetch_movies(movie_provider)
     url = "https://challenge.lexicondigital.com.au/api/#{movie_provider}/movies/"
     return HTTParty(url)
@@ -15,11 +24,16 @@ def fetch_movie_details(movie_id)
     end    
 end
 
-def HTTParty(url)
-    5.times do 
-        results = HTTParty.get(url, :headers => {
-            "X-Api-Key" => "Yr2636E6BTD3UCdleMkf7UEdqKnd9n361TQL9An7"
-        })
-        return results if results.success? 
+def fetch_price(movie_provider, movie_id)
+    if movie_provider.eql? "cinemaworld"
+        url = "https://challenge.lexicondigital.com.au/api/cinemaworld/movie/#{movie_id.sub(/[f]/,'c')}"
+        movie = HTTParty(url)
+        return movie["Price"]
+    else
+        url = "https://challenge.lexicondigital.com.au/api/filmworld/movie/#{movie_id.sub(/[c]/,'f')}"
+        movie = HTTParty(url)
+        return movie["Price"]
     end
 end
+
+
