@@ -1,3 +1,20 @@
-<h1>Movies page</h1>
-<p><%= movies %></p>
+<input type="text" class="movie-search-query" placeholder="Search movie..">
+
+<ul>
+    <% movies.each do |movie| %>
+        <li class="movie-outer-container">
+            <div class="movie-img-container">
+                <img src="<%= movie["Poster"] %>" alt="">
+            </div>
+            <div class="movie-details-container">
+                <h1>
+                    <%= movie["Title"] %>
+                </h1>
+                <h3>
+                    Movie details placeholder
+                </h3>
+            </div>
+        </li>
+    <% end %>
+</ul>
 

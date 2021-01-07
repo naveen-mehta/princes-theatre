@@ -1,6 +1,25 @@
+/* Layouts template */
+
 .layout-heading, .layout-subheading, .layout-description {
     width: 55%;
     margin: 1% auto;
     text-align: center;
 }
 
+/* Movies template */
+
+.movie-outer-container {
+    width: 65%;
+    margin: 1% auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.movie-search-query {
+    width: 55%;
+    margin: 1% auto;
+    border: none;
+    border-bottom: 1px solid rgb(43 26 26 / 50%);
+    text-align: center;
+    display: block;
+}
