@@ -1,5 +1,5 @@
 def HTTParty(url)
-    1.times do 
+    2.times do 
         results = HTTParty.get(url, :headers => {
             "X-Api-Key" => "Yr2636E6BTD3UCdleMkf7UEdqKnd9n361TQL9An7"
         })
