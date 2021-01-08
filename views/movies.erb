@@ -8,18 +8,21 @@
                 <img class="movie-poster" src="<%= movie["Poster"] %>" alt="">
             </div>
             <div class="movie-details-container">
-                <h3><%= movie["Title"] %></h3>
-                <% movie = JSON.parse(fetch_movie_details(movie["ID"]).to_s.force_encoding('UTF-8')) %>    
-                <h5>Director: <%= movie["Director"] %></h5>
-                <h5>Year: <%= movie["Year"] %></h5>
-                <h5>Rated: <%= movie["Rated"] %></h5>
-                <h5>Released: <%= movie["Released"] %></h5>
-                <h5>Runtime: <%= movie["Runtime"] %></h5>
-                <h5>Genre: <%= movie["Genre"] %></h5>
-                <h5>Writer: <%= movie["Writer"] %></h5>
-                <h5>Actors: <%= movie["Actors"] %></h5>
-                <h5>Plot: <%= movie["Plot"] %></h5>
-                <h5>Language: <%= movie["Language"] %></h5>
+                <div class="movie-title-container">
+                    <h3><%= movie["Title"] %></h3>
+                </div>
+                <div class="movie-detailedinfo-container">
+                    <% movie = JSON.parse(fetch_movie_details(movie["ID"]).to_s.force_encoding('UTF-8')) %>    
+                    <h5>Director: <%= movie["Director"] %></h5>
+                    <h5>Year: <%= movie["Year"] %></h5>
+                    <h5>Rated: <%= movie["Rated"] %></h5>
+                    <h5>Released: <%= movie["Released"] %></h5>
+                    <h5 class="movie-runtime">Runtime: <%= movie["Runtime"] %></h5>
+                    <h5 class="movie-genre">Genre: <%= movie["Genre"] %></h5>
+                    <h5 class="movie-actors">Actors: <%= movie["Actors"] %></h5>
+                    <h5 class="movie-plot">Plot: <%= movie["Plot"] %></h5>
+                    <h5>Language: <%= movie["Language"] %></h5>
+                </div>                
                 <div class="movie-price-container">
                     <h4>FilmWorld: $ <%= fetch_price("filmworld", movie["ID"]) %></h4> 
                     <h4>CinemaWorld: $ <%= fetch_price("cinemaworld", movie["ID"]) %></h4>
