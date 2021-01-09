@@ -143,3 +143,11 @@ input:focus {
         display: none;
     }
 }
+
+/* Error template */
+
+.error-message {
+    text-align: center;
+    color: floralwhite;
+    margin: 10% 1% 30% 1%;
+}
