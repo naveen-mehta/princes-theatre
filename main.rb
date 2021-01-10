@@ -1,7 +1,6 @@
-require 'sinatra'
-require 'sinatra/reloader'
+require 'sinatra' 
 require 'httparty'
-require_relative 'helpers/helper.rb'
+require_relative 'helpers/movies_helper.rb'
 require 'json'
 
 get '/ClassicMovies' do
