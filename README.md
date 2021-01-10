@@ -8,6 +8,7 @@ This app allows users to search movies available on Cinemaworld and Filmworld, a
   - [Planning](#planning)
   - [Technologies used](#technologies-used)
   - [Testing instructions](#testing-instructions)
+  - [Mobile responsiveness](#mobile-responsiveness)
   - [Helper methods](#helper-methods)
   - [Templates](#templates)
   - [Assumptions](#assumptions)
@@ -41,6 +42,11 @@ As a part of this coding challenge, the API provided for retrieving movie inform
   3. fetch_price()
 - Instructions to run the tests: In your project directory, run the following command 
   rspec spec/movies_helper_spec.rb 
+
+---
+## Mobile responsiveness
+- This app is full optimized for all mobile devices
+- Please use the chrome emulator to test views in different screen sizes 
 
 ---
 ## Helper methods
