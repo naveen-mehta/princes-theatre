@@ -13,3 +13,7 @@ end
 get '/error' do
     erb :error
 end
+
+get '/' do
+    redirect to ('/ClassicMovies')
+end

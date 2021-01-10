@@ -1,5 +1,5 @@
 def HTTParty(url)
-    3.times do 
+    2.times do 
         response = HTTParty.get(url, :headers => {
             "X-Api-Key" => ENV['API_KEY'] || "Yr2636E6BTD3UCdleMkf7UEdqKnd9n361TQL9An7",
             'Content-Type' => 'application/json'
