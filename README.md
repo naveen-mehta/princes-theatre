@@ -1,6 +1,6 @@
 # Prince's theatre - Movie price comparison app
 
-This app allows users to search movies available on Cinemaworld and Filmworld and compare them by price. 
+This app allows users to search movies available on Cinemaworld and Filmworl, and then see which of the two movie providers is streaming it at a cheaper price.  
 
 ---
 ### Table of Contents
@@ -12,6 +12,7 @@ This app allows users to search movies available on Cinemaworld and Filmworld an
   - [Templates](#templates)
   - [Assumptions](#assumptions)
   - [Improvements and Trade-offs](#improvements-and-trade-offs)
+  - [Instructions to run this app](#instructions-to-run-this-app)
 
 ---
 ## Demo
@@ -79,4 +80,23 @@ As a part of this coding challenge, the API provided for retrieving movie inform
 - An improvement in the current design can potentially include the use of AJAX to display price information at a later time in order to avoid one extra API request on page load
 - Alternatively, a 2 page design will be better for page load times
 - Another approach could be to load information asynchronously using JS 
+
+## Instructions to run this app
+- Clone this repo:
+git clone https://github.com/naveen-mehta/princes-theatre.git
+
+- Change directory to local repo like the example below:
+cd princes-theatre
+
+- Delete the Gemfile.lock 
+  
+- Install bundler
+gem install bundler 
+
+- Run bundle to install dependencies 
+bundle install
+
+- Run the app in browser
+  1. ruby main.rb
+  2. Open in browser using the correct port -> http://localhost:4567
 
