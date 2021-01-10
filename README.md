@@ -1,6 +1,6 @@
 # Prince's theatre - Movie price comparison app
 
-This app allows users to search movies available on Cinemaworld and Filmworl, and then see which of the two movie providers is streaming it at a cheaper price.  
+This app allows users to search movies available on Cinemaworld and Filmworld, and then see which of the two movie providers is streaming it at a cheaper price.  
 
 ---
 ### Table of Contents
